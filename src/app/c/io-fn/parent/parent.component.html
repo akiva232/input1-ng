@@ -8,3 +8,14 @@
 
 
 <app-child [param1]="ipt1va" [param2]="ipt2va"></app-child>
+<br>
+<br>
+<br>
+<br>
+
+
+<h3>outputs</h3>
+<app-child-output (myEvent)="num.innerHTML=$event" (secondsCounter)="secodns.innerHTML=$event"></app-child-output>
+
+<div #num></div>
+<div #secodns></div>
