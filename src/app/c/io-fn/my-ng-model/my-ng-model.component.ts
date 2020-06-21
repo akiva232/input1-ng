@@ -7,9 +7,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./my-ng-model.component.css']
 })
 export class MyNgModelComponent implements OnInit {
-
-  @Input() valueIN:string
-  // @Output() valueChenge:EventEmitter
+   
+  @Input() title:string
+  @Input() valueIn:string
 
   @Output() valueOut:EventEmitter<string> = new EventEmitter<string>()
 

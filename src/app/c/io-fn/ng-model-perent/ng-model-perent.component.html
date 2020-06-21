@@ -1,0 +1,16 @@
+<p>ng-model-perent works!</p>
+
+
+
+<input [(ngModel)]="ngm1"><br>
+<input [(ngModel)]="ngm1"><br>
+{{ngm1}}
+
+
+<br><br>
+
+<h4>app-my-ng-model</h4>
+<app-my-ng-model title="my title" [valueIn]="ngm1"(valueOut)="ngm1=$event"></app-my-ng-model>
+
+<h4>app-my-ng-model3</h4>
+<app-my-ng-model3 title="my title" [(shuki)]="ngm1"></app-my-ng-model3>
